@@ -15,55 +15,337 @@ src: url(fonts/georgia.ttf);
         border: 0;
     }
     
-    *,
-    *:before,
-    *:after {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
     
-    :focus,
-    :active {
-        outline: none;
-    }
+:focus,
+:active {
+    outline: none;
+}
     
-    a:focus,
-    a:active {
-        outline: none;
-    }
+a:focus,
+a:active {
+    outline: none;
+}
     
-    a,
-    a:visited {
-        text-decoration: none;
-        color: inherit;
-    }
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
     
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-        font-size: 14px;
-        line-height: 1.6;
-        font-weight: 400;
-        font-family: Arial, sans-serif;/*добавляю запасной шрифт*/
-        scroll-behavior: smooth;
-    }
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #545454;
+    font-family: Arial, sans-serif;/*добавляю запасной шрифт*/
+    scroll-behavior: smooth;
+    background: gray;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+html {
+    box-sizing: border-box;
+}
     
-    button {
-        cursor: pointer;
-    }
+button {
+    cursor: pointer;
+}
     
-    ul li {
-        list-style: none;
-    }
+ul li {
+    list-style: none;
+}
     
-    p {
-        width: auto;
-        overflow-wrap: break-word ;
-    }
+p {
+    width: auto;
+    overflow-wrap: break-word ;
+}
     
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #FFFFFF;
+}
+
+.header-wrappier {
+    max-width: 1200px;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 184px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-logo-title {
+    position: absolute;
+    font-family: 'Georgia';
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+.header-logo-subtitle {
+    margin-top: 45px;
+    margin-left: 4px;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #292929;
+}
+
+.menu-list {
+    width: 443px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu-item {
+    font-style: normal;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.menu-item-black {
+    color:  #292929;
+    font-style: normal;
+    line-height: 160%;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+.menu-item:hover {
+    transition: 0.5s ease-out;
+    color: #292929;  
+}
+
+#our-friends {
+    height: 1342px;
+    background: #F6F6F6;
+}
+
+.our-friends {
+    width: 1200px;
+    height: 1162px;
+    padding: 80px 0 100px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    width: 400px;
+    height: 90px;
+    margin-bottom: 60px;
+
+  
+}
+
+h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.cards {
+    width: 1200px;
+    height: 900px;
+    margin-bottom: 60px;
+}
+
+.navigation {
+    width: 340px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-1 {
+    width: 52px;
+    height: 52px;
+    display: block;
+}
+
+.nav-2 {
+    width: 52px;
+    height: 52px;
+    display: block;
+}
+
+.nav-3 {
+    width: 52px;
+    height: 52px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    
+    display: flex;
+    background:  #F1CDB3;
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.nav-4 {
+    width: 52px;
+    height: 52px;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-4:hover {
+    background:  #F1CDB3;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-5 {
+    width: 52px;
+    height: 52px;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-5:hover {
+    background:  #F1CDB3;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+/*
+.navigation {
+    background-image: url(./assets/p-2.svg);
+    width: 52px;
+    height: 52px;
+}
+
+.navigation:hover {
+    background-image: url(./assets/p-1.svg);
+    border-radius: 100px;
+    text-align: center;
+    border-radius: solid #FDDCC4;
+}*/
+
+footer {
+    height: 350px;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-content {
+    width: 100%;
+    height: 310px;
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    width: 278px;
+    height: 234px;
+    margin: 16px 161px 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.location {
+    width: 302px;
+    height: 234px;
+    margin: 16px 160px 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer img {
+    width: 300px;
+    height: 310px;
+}
+
+.contacts-title {
+    width: 288px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+#footer-link {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+.footer-icon-email {
+    width: 40px;
+    height: 26px;
+    margin-right: 20px;
+    background-image: url(./assets/mail.svg);
+}
+
+.footer-icon-phone {
+    width: 40px;
+    height: 32px;
+    margin-right: 20px;
+    background-image: url(./assets/phone.svg);
+}
+
+.footer-icon-pin {
+    width: 22px;
+    height: 32px;
+    margin-right: 20px;
+    background-image: url(./assets/pin.svg);
+}
+    
+
