@@ -119,6 +119,14 @@ p {
     list-style-type: none;
 }
 
+ul {
+    width: 443px;
+    height: 27px;
+    gap: 35px;
+    display: flex;
+    align-items: center;
+}
+
 .menu-item {
     font-style: normal;
     line-height: 160%;
@@ -131,7 +139,6 @@ p {
     line-height: 160%;
     color: #FFFFFF;
     border-bottom: 3px solid #F1CDB3;
-    padding-bottom: 4px;
 }
 
 .menu-item:hover {
@@ -186,7 +193,7 @@ h1 {
     margin-bottom: 42px;
 }
 
-.not-only-button {
+#not-only-button {
     padding: 15px 45px;
     background: #F1CDB3;
     border-radius: 100px;
@@ -199,7 +206,7 @@ h1 {
     cursor: pointer;
 }
 
-.not-only-button:hover {
+#not-only-button:hover {
     background: #FDDCC4;
     transition: all 0.3s ease-in-out;
 }
@@ -379,7 +386,10 @@ transition: all 0.3s ease-in-out;
     text-align: center;
     align-items: center;
     color: #292929;
+    background: #FAFAFA;
 }
+
+
 
 .choose-img {
     width: 270px;
@@ -617,7 +627,7 @@ footer {
     color: #FFFFFF;
 }
 
-#footer-link {
+#footer-link-mail {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -628,6 +638,45 @@ footer {
     display: flex;
     align-items: left;
 }
+
+#footer-link-tel {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+#footer-link-pin1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+#footer-link-pin2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+
+
 
 .footer-icon-email {
     width: 40px;

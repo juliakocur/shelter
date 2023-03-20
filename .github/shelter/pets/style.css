@@ -110,6 +110,14 @@ p {
     color: #292929;
 }
 
+ul {
+    width: 443px;
+    height: 27px;
+    gap: 35px;
+    display: flex;
+    align-items: center;
+}
+
 .menu-list {
     width: 443px;
     height: 27px;
@@ -129,7 +137,6 @@ p {
     font-style: normal;
     line-height: 160%;
     border-bottom: 3px solid #F1CDB3;
-    padding-bottom: 4px;
 }
 
 .menu-item:hover {
@@ -315,7 +322,43 @@ footer {
     color: #FFFFFF;
 }
 
-#footer-link {
+#footer-link-mail {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+#footer-link-tel {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+#footer-link-pin1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    align-items: left;
+}
+
+#footer-link-pin2 {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -348,4 +391,69 @@ footer {
     background-image: url(./assets/pin.svg);
 }
     
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.choose {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.choose:hover {
+    background-color: #fff;
+    box-shadow: 0px 2px 35px 14px rgb(13 13 13 / 4%);
+    transition: all 0.3s ease-in-out;
+}
+
+.choose:hover .choose-button {
+background: #FDDCC4;
+transition: all 0.3s ease-in-out;
+}
+
+.choose-button {
+    width: 187px;
+    height: 52px;
+    margin: 0 41.5px 30px 41.5px;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    align-items: center;
+    color: #292929;
+    background: #FAFAFA;
+}
+
+.choose-img {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+}
+
+.choose-par {
+    min-width: 74px;
+height: 23px;
+margin-bottom: 30px;
+text-align: center;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+color: #545454;
+}
 
