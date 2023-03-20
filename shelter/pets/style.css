@@ -413,9 +413,10 @@ footer {
 }
 
 .choose:hover .choose-button {
-background: #FDDCC4;
-transition: all 0.3s ease-in-out;
-}
+    background: #FDDCC4;
+    border: #FDDCC4;
+    transition: all 0.3s ease-in-out;
+    }
 
 .choose-button {
     width: 187px;
