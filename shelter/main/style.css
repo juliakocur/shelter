@@ -67,6 +67,19 @@ p {
     overflow-wrap: break-word ;
 }
 
+body._lock {
+ overflow: hidden;
+}
+
+.shadow {
+    position: fixed;
+    width: 100%;
+    height: 0%;
+    background: rgba(41, 41, 41, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -110,6 +123,10 @@ p {
     color: #FFFFFF;
 }
 
+.burger {
+    display: none;
+}
+
 .menu-list {
     width: 443px;
     height: 27px;
@@ -139,6 +156,7 @@ ul {
     line-height: 160%;
     color: #FFFFFF;
     border-bottom: 3px solid #F1CDB3;
+    margin-top: 3px;
 }
 
 .menu-item:hover {
@@ -908,8 +926,7 @@ html {
     margin-left: 63px;
     order: 1;
 }
-        
-        
+             
 footer {
     height: 639px;
 }
@@ -938,6 +955,94 @@ footer {
         
 .footer-content img {
     margin: 0 204px ;
-}
-        
+}   
     }
+
+@media (max-width: 767.9px) {
+
+html { 
+    overflow-x: hidden; 
+}
+            
+.container {
+    max-width: 300px;
+}
+
+
+.header-wrappier {
+    padding-left: 10px;
+    padding-right: 53px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 5px;
+
+}
+
+.header-logo {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.header-logo-title {
+    width: 190px;
+    height: 35px;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    top: 49px;
+    right: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.burger._active {
+    transform: rotate(-90deg);
+    transition: all .3s ease;
+}
+
+.menu-list {
+    overflow: auto;
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    right: -320px;
+    top: 0;
+    background: #292929;
+    transition: all 0.3s ease-out;
+}
+
+.menu-list._active {
+   right: 0;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 248px;
+   gap: 40px;
+}
+
+.shadow._active {
+    height: 100%;
+    opacity: 1;
+}
+
+.menu-item-white {
+    font-size: 32px;
+    line-height: 160%;
+}
+
+.menu-item {
+    font-size: 32px;
+    line-height: 160%;
+}
+
+}
