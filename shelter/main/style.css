@@ -745,7 +745,7 @@ footer {
 
 @media (min-width: 767.9px) and (max-width: 1279.9px) {
   
-html { 
+html,body { 
     overflow-x: hidden; 
 }
         
