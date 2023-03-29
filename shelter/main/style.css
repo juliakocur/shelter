@@ -432,8 +432,6 @@ transition: all 0.3s ease-in-out;
     background: #FAFAFA;
 }
 
-
-
 .choose-img {
     width: 270px;
     height: 270px;
@@ -742,6 +740,7 @@ footer {
     margin-right: 20px;
     background-image: url(./assets/pin.svg);
 }
+
     
 
 @media (min-width: 767.9px) and (max-width: 1279.9px) {
@@ -1377,4 +1376,4 @@ footer {
 #footer-link-pin1 {
     margin-bottom: 40px;
 }
-}
+}  
