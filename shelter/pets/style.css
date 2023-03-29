@@ -85,6 +85,10 @@ body._lock {
     margin: 0 auto;
 }
 
+.burger {
+    display: none;
+}
+
 #header {
     background-color: #FFFFFF;
 }
@@ -469,6 +473,10 @@ html {
             
 .container {
     max-width: 708px;
+}
+
+.burger {
+    display: none;
 }
 
 
