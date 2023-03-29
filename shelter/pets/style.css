@@ -269,19 +269,6 @@ h1 {
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
-/*
-.navigation {
-    background-image: url(./assets/p-2.svg);
-    width: 52px;
-    height: 52px;
-}
-
-.navigation:hover {
-    background-image: url(./assets/p-1.svg);
-    border-radius: 100px;
-    text-align: center;
-    border-radius: solid #FDDCC4;
-}*/
 
 footer {
     height: 350px;
@@ -626,6 +613,51 @@ footer {
         font-size: 32px;
         line-height: 160%;
     }
+
+
+    #our-friends {
+        height: 1649px;
+    }
+    
+    .our-friends {
+        width: 300px;
+        height: 1565px;
+        padding:  42px 0;
+        flex-wrap: wrap;
+    }
+    
+    .title {
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        line-height: 130%;
+        margin-bottom: 42px;
+    }
+    
+    h1 {
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        line-height: 130%;
+        display: block;
+    }
+
+    .cards {
+        width: 270px;
+        height: 1365px;
+        margin: 0 15px;
+    }
+
+    .choose:nth-child(n+4) {
+        display: none;
+    }
+    
+    .navigation {
+        width: 300px;
+        height: 52px;
+        margin-top: 42px;
+    } 
+
     footer {
         height: 809px;
     }
