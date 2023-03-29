@@ -767,7 +767,15 @@ html,body {
     flex-direction: column;
     justify-content: space-between;
 }
-            
+
+.header-logo-title {
+  position: relative;
+  width: 190px;
+}
+   
+.header-logo-subtitle {
+    margin-top: 10px;
+}
             
 .menu-item {
     font-style: normal;
