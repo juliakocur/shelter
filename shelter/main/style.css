@@ -1016,7 +1016,7 @@ ul {
     height: 0;
     right: -320px;
     top: 0;
-    background: black;
+    background: #292929;
     transition: all 0.3s ease-out;
 }
 
@@ -1065,11 +1065,12 @@ ul {
     width: 260px;
     height: 271px;
     margin-left: 40px;
+    margin-top: 1px;
 }
             
 .not-only-img img {
     width: 260px;
-    height: 271px
+    height: 271px;
 }
         
 .not-only-text {
