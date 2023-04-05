@@ -25,6 +25,7 @@ navMenu.addEventListener("click", () => {
     closeBurger();
 });
 
+
 document.querySelector('.shadow').addEventListener("click", () => {
   if (navMenu.classList.contains('_active')) closeBurger();
 });
