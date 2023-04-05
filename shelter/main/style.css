@@ -897,6 +897,7 @@ html,body {
     height: 435px;
 }
 
+
 .pets-wrappier {
     width: 604px;
 }
@@ -941,6 +942,17 @@ html,body {
 }
 
         
+        
+.pets-slide {
+    width: 580px;
+    height: 435px;
+    margin: 0 12px;
+}
+        
+.choose:last-child {
+    display: none;
+}
+
         
 #help {
     height: 779px;
@@ -1105,8 +1117,13 @@ ul {
 .shadow._active {
     height: 100%;
     opacity: 1;
+
     transition: opacity 0.5s ease-out;
     margin: -30px -20px -10px -20px;
+}
+
+
+
 }
 
 
@@ -1119,6 +1136,9 @@ ul {
     font-size: 32px;
     line-height: 160%;
 }
+
+
+
 
       
 #not-only {
@@ -1250,6 +1270,7 @@ h1 {
     flex-direction: column;
 }
         
+
 .pets-wrappier {
     width: 270px;
     height: 455px;
@@ -1267,6 +1288,14 @@ h1 {
 }
 
 
+.pets-slide {
+    width: 270px;
+    height: 435px;
+    margin: 0 0 20px 0;
+    order: 1;
+}
+
+
 .left-arrow {
     margin: 0 0 0 43px;
     order: 2;
@@ -1276,6 +1305,7 @@ h1 {
     margin: -52px 0 0 175px;
     order: 3;
 }
+
 
 
 .choose:first-child{
@@ -1309,6 +1339,11 @@ h1 {
 .transition-left {
     animation-name: move-left;
     animation-duration: 1s;
+
+        
+.choose:nth-child(n+2) {
+    display: none;
+
 }
 
 
@@ -1489,4 +1524,8 @@ footer {
 #footer-link-pin1 {
     margin-bottom: 40px;
 }
+
 }  
+
+ 
+
