@@ -213,25 +213,50 @@ h1 {
 }
 
 .nav-1 {
+    background-image: url(./assets/1.svg);
     width: 52px;
     height: 52px;
     display: block;
 }
 
+.nav-1._active {
+    background-image: url(./assets/p-1.svg);
+    transform: rotate(-180deg);
+}
+
+.nav-1._active:hover {
+    background-color:  #F1CDB3;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
 .nav-2 {
+    background-image: url(./assets/2.svg);
     width: 52px;
     height: 52px;
     display: block;
+}
+
+.nav-2._active {
+    background-image: url(./assets/p-2.svg);
+    transform: rotate(-180deg);
+}
+
+.nav-2._active:hover {
+    background-color:  #F1CDB3;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-3 {
     width: 52px;
     height: 52px;
 
-    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #292929;
@@ -242,37 +267,56 @@ h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
-
-    
 }
 
 .nav-4 {
+    background-image: url(./assets/p-2.svg);
     width: 52px;
     height: 52px;
     display: block;
     cursor: pointer;
 }
 
+.nav-4._active {
+    background-image: url(./assets/2.svg);
+    transform: rotate(-180deg);
+}
+
+.nav-4._active:hover {
+    background-color:   #F6F6F6;
+}
+
 .nav-4:hover {
-    background:  #F1CDB3;
+    background-color:  #F1CDB3;
     border-radius: 100px;
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
 
 .nav-5 {
+    background-image: url(./assets/p-1.svg);
     width: 52px;
     height: 52px;
     display: block;
     cursor: pointer;
 }
 
+.nav-5._active {
+    background-image: url(./assets/1.svg);
+    transform: rotate(-180deg);
+}
+
+.nav-5._active:hover {
+    background-color:   #F6F6F6;
+}
+
 .nav-5:hover {
-    background:  #F1CDB3;
+    background-color:  #F1CDB3;
     border-radius: 100px;
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
+
 
 footer {
     height: 350px;

@@ -172,7 +172,7 @@ const pets = [
 
       const createCardTemplate = () => {/*генерирую карточку */
           let random = (Math.floor(Math.random() * 8));
-
+console.log(random)
           const choose = document.createElement("div");
           choose.classList.add("choose");
           choose.setAttribute('id', random+1);
@@ -181,7 +181,7 @@ const pets = [
           let imgNew = document.createElement('img');
           imgNew.classList.add('choose-img')
           imgNew.setAttribute('src', img);
-          
+
           let pNew = document.createElement('p');
           pNew.classList.add('choose-par');
           pNew.innerText = pets[random].name;
@@ -190,6 +190,9 @@ const pets = [
           button.classList.add('choose-button');
           button.innerText = "Learn more";
           
+console.log(pets)
+console.log(pets[random])
+
           choose.appendChild(imgNew);
           choose.appendChild(pNew);
           choose.appendChild(button);
