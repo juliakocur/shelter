@@ -21,6 +21,8 @@ const closeBurger = () => {
         navMenu.classList.remove('_active');
 };
 
+
+
 navMenu.addEventListener("click", () => {
     closeBurger();
 });
@@ -129,7 +131,7 @@ const pets = [
     diseases: ["deafness", "blindness"],
     parasites: ["lice", "fleas"]
   }
-]
+];
 
 const pets2 = [
   {
@@ -870,6 +872,7 @@ function createEl() {
       for (let note of notes) {
         let choose = document.createElement("div");
         choose.classList.add("choose");
+        choose.setAttribute('id', note.id);
         CARD.appendChild(choose);
   
         let img = note.img;
