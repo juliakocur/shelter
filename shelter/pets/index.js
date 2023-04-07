@@ -15,11 +15,13 @@ const navMenu = document.querySelector('.menu-list');
 
 /* закрытие бургер меню */
 const closeBurger = () => {
-        document.body.classList.remove('_lock');
-        document.querySelector('.shadow').classList.remove('_active');
-        iconMenu.classList.remove('_active');
-        navMenu.classList.remove('_active');
+       document.body.classList.remove('_lock');
+       document.querySelector('.shadow').classList.remove('_active');
+       iconMenu.classList.remove('_active');
+       navMenu.classList.remove('_active');
 };
+
+
 
 navMenu.addEventListener("click", () => {
     closeBurger();
@@ -893,4 +895,6 @@ function createEl() {
 }
 
 
+
 /*----------------------------pagination----end-----------------------------*/
+
